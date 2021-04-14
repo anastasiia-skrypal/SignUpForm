@@ -1,99 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Sign Up</title>
+		<title>Blank page</title>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<main class="main">
-			<form class="form">
-				<h2 class="form_title">Sign Up to get more Updates</h2>
-				<h4 class="form_subtitle">Contact Information</h4>
-				<div class="form_contact">
-					<div class="form_group error">
-						<label for="user_name" class="form_label label_strong">Full name </label>
-						<input type="text" id="user_name" required placeholder="Your full name" class="form_input">
-					</div>
-					<div class="form_group">
-						<label for="user_tel" class="form_label label_strong">Phone number </label>
-						<input type="tel" id="user_tel" required placeholder="(123)_ _ _-_ _ _ _" class="form_input">
-					</div>
-					<div class="form_group">
-						<label for="user_email" class="form_label label_strong">E-mail </label>
-						<input type="email" id="user_email" required placeholder="Your e-mail" class="form_input">
-					</div>
-				</div>
-				<h4 class="form_subtitle">Delivery Information</h4>
-				<div class="form_delivery">
-					<div class="form_group">
-						<label for="city" class="form_label label_strong">City </label>
-			            <input type="text" id="city" required placeholder="Your city" class="form_input" list="list_city">
-			            <div list="list_city">
-			                <span>Athens</span>
-			                <span>Beijing</span>
-			                <span>Berlin</span>
-			                <span>Cairo</span>
-			                <span>Lisbon</span>
-			        		<span>London</span>
-			       			<span>Mexico City</span>
-			                <span>Moscow</span>
-			                <span>New York</span>
-			                <span>Rio de Janeiro</span>
-			                <span>Rome</span>
-			                <span>Tokyo</span>
-			            </div>
-			        </div> 
-					<div class="form_group">
-						<label for="country" class="form_label label_strong">Country </label>
-				            <input type="text" id="country" required placeholder="Your country" class="form_input" list="list_country">
-				            <div list="list_country">
-				                <span>Athens</span>
-				                <span>Beijing</span>
-				                <span>Berlin</span>
-				                <span>Cairo</span>
-				                <span>Lisbon</span>
-				        		<span>London</span>
-				       			<span>Mexico City</span>
-				                <span>Moscow</span>
-				                <span>New York</span>
-				                <span>Rio de Janeiro</span>
-				                <span>Rome</span>
-				                <span>Tokyo</span>
-				            </div>
-					</div>
+		<table class="table" id="table">
+			<tr>
+				<th class="name">Фио</th>
+				<th class="age">Возраст</th>
+				<th class="salary">Зарплата/месяц</th>
+			</tr>
+			<tr>
+				<td class="name_employee">Янівська Зоя Орестівна</td>
+				<td class="age_employee">43</td>
+				<td class="salary_employee">21560</td>
+			</tr>
+			<tr>
+				<td class="name_employee">Костецький Радован Вадимович</td>
+				<td class="age_employee">28</td>
+				<td class="salary_employee">27256</td>
+			</tr>
+			<tr>
+				<td class="name_employee">Носковський Ян Адріанович</td>
+				<td class="age_employee">46</td>
+				<td class="salary_employee">13500</td>
+			</tr>
+			<tr>
+				<td class="name_employee">Головінська Настя Златівна</td>
+				<td class="age_employee">51</td>
+				<td class="salary_employee">3521</td>
+			</tr>
+			<tr>
+				<td colspan="2">Cредняя зарплата по отделу</td>
+				<td class="average_salary" id="average_salary"></td>
+			</tr>
+		</table>
+		<div class="modal hidden" id="modal"></div>
 
-			        <div class="form_group">
-			       		<label for="zip" class="form_label label_strong">Zip code  </label>
-					    <input  id="zip" required placeholder="_ _ _ - _ _ _" type="text" class="form_input">  
-					</div>  
-					
-				</div>
-				<h4 class="form_subtitle">Preferences Confirmation</h4>
-				<div class="form_confirmation">
-					<div class="form_group">
-						<input type="checkbox" id="checkbox_01" class="check">
-						<label for="checkbox_01" class="form_label label_strong">checkbox_01</label>
-						<p class="check_description">I want to receive news, advice and marketing offers from Nestle</p>
-					</div>
-					<div class="form_group">
-						<input type="checkbox" id="checkbox_02" class="check">
-						<label for="checkbox_02" class="form_label label_strong">checkbox_02</label>
-						<p class="check_description">I want to receive a newsletter about price changes</p>
-					</div>
-					<div class="form_group">
-						<input type="checkbox" id="checkbox_03" class="check">
-						<label for="checkbox_03" class="form_label label_strong">checkbox_03</label>
-						<p class="check_description">I allow to use my data to personalize content and marketing activies</p>
-					</div>
-				</div>
-
-				<button type="submit" class="form_button">Create a profile</button>
-
-			</form>
-		</main>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/script.js"></script>	
+		<iframe name="google" src="https://www.google.com/webhp?igu=1" width="500px" height="350px" class="iframe"></iframe>
+	<script src="script.js"></script>	
 	</body>
 </html>
