@@ -1,0 +1,33 @@
+body, p, ul, li, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: $black01;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $grey01;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $black01;
+}
